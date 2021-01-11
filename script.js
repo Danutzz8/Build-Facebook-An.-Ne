@@ -23,7 +23,7 @@ let newsFeed = [{
 },
 {
     username: 'Sally',
-    timeline: 'Javascript is soo cool'
+    timeline: 'Javascript is soo cool!!!'
 }
 ];
 
@@ -55,7 +55,7 @@ function isUserValid(username, password) {
 // using a forloop
 function signIn(username, password) {
         if(isUserValid(username, password)){
-           return newsFeedDOM.innerHTML = `The news:<br> ${newsFeed[0].username}<br>${newsFeed[0].timeline}` 
+           return newsFeedDOM.innerHTML = `The news:<br> ${newsFeed[0].username}<br>${newsFeed[0].timeline}<br><hr>${newsFeed[1].username}<br>${newsFeed[1].timeline}` 
         } else {
                  alert('Sorry, wrong username and password!')
         
